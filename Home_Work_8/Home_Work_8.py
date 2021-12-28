@@ -28,20 +28,20 @@ generate_rand_num()
 
 #4. Написать функцию, которая принимает в качестве параметра строку и печатает ее в верхнем регистре (UPPERCASE).
 
-def receive_str():
-    str_1 = str("Enter the word ")
-    print(str.upper(str_1))
+def receive_str(str_param):
+    return str_param.upper()
 
-receive_str()
+str_param_new = "Enter the word "
+print(receive_str(str_param_new))
 
 #5. Написать функцию, которая принимает в качестве параметра строку и возвращает ее в верхнем регистре (UPPERCASE).
 
-def receive_str():
-    str_to_up = "ddfgdfgdfgdfglpdfmfdgkmfg"
-    return str_to_up.upper()
-    print(str_to_up)
+def receive_str(some_str):
+    return some_str.upper()
 
-receive_str()
+str_to_up = "ddfgdfgdfgdfglpdfmfdgkmfg"
+value = receive_str(str_to_up)
+print(value)
 
 #6. Написать функцию, которая принимает в качестве параметра список строк и возвращает их в виде списка строк в верхнем регистре (UPPERCASE).
 
@@ -57,17 +57,17 @@ print(value)
 
 def generate_num(gen_number):
     result = [i for i in range(1, gen_number + 1)]
-    print(result)
+    return result
 
-generate_num(6)
+print(generate_num(6))
 
 #8. Написать функцию, которая принимает в качестве параметра число и возвращает список квадратов чисел от 1 до заданного числа включительно.
 
 def generate_num(gen_number):
     result = [i * i for i in range(1, gen_number + 1)]
-    print(result)
+    return result
 
-generate_num(5)
+print(generate_num(5))
 
 #Вариант 2
 # result = []

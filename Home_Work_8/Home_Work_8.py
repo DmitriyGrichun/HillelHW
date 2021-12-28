@@ -18,12 +18,11 @@ print(value)
 # "Хорошо", если это число больше 50 или слово "Плохо" в противоположном случае.
 
 def generate_rand_num():
-    result = (random.randint(1, 100) for _ in range(1))
-    for i in list(result):
-        if i >= 50:
-            print("good")
-        else:
-            print("bad")
+    gen_ran = random.randint(1, 100)
+    if gen_ran >= 50:
+        print("good")
+    else:
+        print("bad")
 
 generate_rand_num()
 
@@ -37,13 +36,12 @@ receive_str()
 
 #5. Написать функцию, которая принимает в качестве параметра строку и возвращает ее в верхнем регистре (UPPERCASE).
 
-def receive_str(some_str):
-    return some_str.upper()
+def receive_str():
+    str_to_up = "ddfgdfgdfgdfglpdfmfdgkmfg"
+    return str_to_up.upper()
+    print(str_to_up)
 
-str_to_up = "ddfgdfgdfgdfglpdfmfdgkmfg"
-value = receive_str(str_to_up)
-print(value)
-
+receive_str()
 
 #6. Написать функцию, которая принимает в качестве параметра список строк и возвращает их в виде списка строк в верхнем регистре (UPPERCASE).
 

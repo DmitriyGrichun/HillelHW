@@ -1,11 +1,22 @@
-
+import random
 # 1. Написать функцию которой передается один параметр - список строк my_list.
 # Функция возвращает новый список в котором содержаться
 # элементы из my_list у которых первый символ - буква "a".
 
+def string_list(my_list):
+    my_list= [item for item in my_list if item.startswith('a') ]
+    return my_list
+
+string_list_new = ['sfsfaafgg', 'assamsy', 'frasasient', 'adddfff']
+value_1 = string_list(string_list_new)
+print(value_1)
+
 # 2. Написать функцию которой передается один параметр - список строк my_list.
 # Функция возвращает новый список в котором содержаться
 # элементы из my_list в которых есть символ - буква "a" на любом месте.
+
+# def string_list_2(my_list):
+
 
 # 3. Написать функцию которой передается один параметр - список строк my_list в
 # котором могут быть как строки (type str) так и целые числа (type int).
